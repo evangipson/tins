@@ -32,14 +32,12 @@ input[type="submit"] {
     overflow: auto;
     max-height: 75vh;
 }
-/* How wide is the world output sidebar? */
-.world-output > div {
-    max-width: 25vw;
-}
 .event-output {
-    width: calc(100vw - 25vw);
     padding: 1rem;
     box-sizing: border-box;
+}
+.output, .event-output {
+    width: 100%;
 }
 .world-output {
     flex-direction: row;
@@ -47,6 +45,7 @@ input[type="submit"] {
     justify-content: flex-start;
     align-items: flex-start;
     font-size: 0.75rem;
+    width: 180px; /* How wide is the world output sidebar? */
 }
 .world-output h1 {
     font-size: 26px;
@@ -109,4 +108,10 @@ input[type="submit"] {
     margin: 1rem auto;
     padding: 0 3rem;
     min-height: 7rem;
+}
+
+@media screen and (min-width: 768px) {
+    .world-output {
+        width: 350px; /* How wide is the world output sidebar? */
+    }
 }
