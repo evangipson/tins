@@ -75,13 +75,16 @@ input[type="submit"] {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 .quick-info div {
-    box-shadow: 0px 5px 5px rgba(0,0,0,.15);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.15);
     padding: 0.5rem;
+    font-size: 0.7rem;
     box-sizing: border-box;
+    margin: 0.5rem 1rem;
+    max-width: 9rem;
 }
 .info-event {
     padding: 2rem;
