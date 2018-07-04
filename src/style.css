@@ -23,25 +23,7 @@ input[type="submit"] {
 }
 .world-output, .event-output {
     overflow: auto;
-    max-height: calc(100vh -  25rem);
-}
-@media screen and (min-width: 468px) {
-    .world-output, .event-output {
-        overflow: auto;
-        max-height: calc(100vh - 17rem);
-    }
-}
-@media screen and (min-width: 668px) {
-    .world-output, .event-output {
-        overflow: auto;
-        max-height: calc(100vh - 14rem);
-    }
-}
-@media screen and (min-width: 1200px) {
-    .world-output, .event-output {
-        overflow: auto;
-        max-height: calc(100vh - 12.5rem);
-    }
+    max-height: calc(100vh - 3rem); /* full height minus button height */
 }
 /* How wide is the world output sidebar? */
 .world-output > div {
